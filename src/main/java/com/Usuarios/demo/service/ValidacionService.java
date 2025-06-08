@@ -1,4 +1,6 @@
 package com.Usuarios.demo.service;
 
-public class ValidacionService {
+@FunctionalInterface
+public interface ValidacionService<T> {
+    boolean validar(T t);
 }
